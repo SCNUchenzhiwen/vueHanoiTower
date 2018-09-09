@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style>
+    #ntkoocxdiv_input {
+      width: 500px;
+      height: 500px;
+    }
+
+    #webSignButtonSeal {
+    }
+
+    #SecHandSignID {
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+<!--<script src="./ntko/goushi.js"></script>-->
+<script src="./ntko/NtkoAddSecSign.js"></script>
+<script src="./ntko/NtkoWebSign.js"></script>
+<script src="./ntko/WebSignPlugin.js"></script>
+<input type="text" controltype="webSign" name="input" right="w">
+<!--<div class="goushi">-->
+<!--<object id="TANGER_OCX" classid="clsid:A39F1330-3322-4a1d-9BF0-0BA2BB90E970"-->
+<!--codebase="./ntko/OfficeControl.cab#version=5,0,3,1" width="100%" height="100%">-->
+<!--<param name="IsUseUTF8URL" value="-1">-->
+<!--<param name="IsUseUTF8Data" value="-1">-->
+<!--<param name="BorderStyle" value="1">-->
+<!--<param name="BorderColor" value="14402205">-->
+<!--<param name="TitlebarColor" value="15658734">-->
+<!--<param name="TitlebarTextColor" value="0">-->
+<!--<param name="MenubarColor" value="13158600">-->
+<!--<param name="MenuButtonColor" VALUE="16180947">-->
+<!--<param name="MenuBarStyle" value="3">-->
+<!--<param name="MenuButtonStyle" value="7">-->
+<!--<param name="WebUserName" value="NTKO">-->
+<!--<param name="UILangCode" value="AUTO">-->
+<!--<param name="Serverpage" value="paaa.asp">-->
+<!--<param name="Caption" value="测试">-->
+<!--<SPAN STYLE="color:red">不能装载文档控件。请在检查浏览器的选项中检查浏览器的安全设置。请点击<a href="">安装控件</a></SPAN>-->
+<!--</object>-->
+<!--<button id="shabi"></button>-->
+<!--</div>-->
+<div id="targetId"></div>
+<button id="goushi">提交</button>
+
+<script>
+  WebSignPlugin.init()
+  document.getElementById('goushi').addEventListener('click', function () {
+    console.log('提交')
+    WebSignPlugin.submit()
+  })
+</script>
+
+</body>
+</html>

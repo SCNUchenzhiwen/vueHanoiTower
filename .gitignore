@@ -1,0 +1,9 @@
+*.iml
+node_modules
+dist
+*.log
+*.rar
+*.zip
+.git
+.idea
+npm-debug
