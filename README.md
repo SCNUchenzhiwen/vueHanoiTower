@@ -11,7 +11,7 @@
      ## 二、使用递归函数方式，每一次方块移动都是上一次所有移动改变移动目标轴的结果，递归改变移动目标轴生成位移数组
   ## 5、胜利判断
 
-使用直接下载components/hanoiPower文件即可
+使用直接下载components/hanoiTower文件即可
 
 # 效果图
 ![效果图](https://github.com/SCNUchenzhiwen/vueHanoiTower/blob/master/hanoiToer.png)
